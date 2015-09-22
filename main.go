@@ -36,14 +36,6 @@ func SystemStats(path string) (stat Stats) {
 	return
 }
 
-//const ..
-const (
-	B  = 1
-	KB = 1024 * B
-	MB = 1024 * KB
-	GB = 1024 * MB
-)
-
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
